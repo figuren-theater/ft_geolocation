@@ -1,0 +1,72 @@
+{
+    "key": "group_5ee58d5a24e6a",
+    "title": "GeoMeta",
+    "fields": [
+        {
+            "key": "field_5ee6b2b3dae0a",
+            "label": "Adresse",
+            "name": "adresse",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ee58d64c58e8",
+            "label": "GeoMeta",
+            "name": "geometa",
+            "type": "geometa",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ee6b2b3dae0a",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "user_input_type": "byo-geocoder"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "ft_geolocation"
+            }
+        ],
+        [
+            {
+                "param": "customizer",
+                "operator": "==",
+                "value": "ft_geolocationbasic"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1592342439
+}
